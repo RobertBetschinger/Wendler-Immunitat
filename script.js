@@ -18,5 +18,17 @@ function replaceText(element){
           }
         
     }
+    else if(element.nodeType === "IMG"){
+        if(element.src.match(/Wendler/gi)){
+            element.remove()
+        }
+        if(element.alt.match(/Wendler/gi)){
+            element.remove()
+        }
+        if(element.title.match(/Wendler/gi)){
+            element.remove()
+        }
+
+    }
     
 }
